@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trafficticketsystem" >
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrafficTicketSystem" >
+        <activity android:name=".UserVerifyPhoneActivity" >
+        </activity>
+        <activity android:name=".PoliceRecordInformationActivity" />
+        <activity android:name=".PoliceHistoryActivity" />
+        <activity android:name=".AdminSummonListActivity" />
+        <activity android:name=".AdminCheckSummonActivity" />
+        <activity android:name=".PaySummonActivity" />
+        <activity android:name=".UserSummonActivity" />
+        <activity android:name=".AddPoliceAccount" />
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".PoliceLoginActivity" />
+        <activity android:name=".RecordActivity" />
+        <activity android:name=".FillDetails" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".CitizenRegister" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".UserActivity" />
+        <activity android:name=".PoliceActivity" />
+        <activity android:name=".MainActivity" >
+            <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="ocr" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FetchAddressIntentService" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.trafficticketsystem.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

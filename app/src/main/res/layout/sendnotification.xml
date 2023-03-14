@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:fontFamily="@font/alice"
+        android:textStyle="bold"
+        android:layout_marginRight="86dp"
+        android:gravity="center"
+        android:text="Phone Number:"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+   android:fontFamily="serif"
+
+        android:gravity="left"
+        android:layout_marginTop="6dp"
+
+        android:layout_gravity="center"
+        android:id="@+id/phoneNo_txt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginRight="75dp"
+        android:fontFamily="@font/alice"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Message Content:"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="6dp"
+
+        android:layout_gravity="center"
+        android:id="@+id/message_txt"
+        android:gravity="left"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="#000"
+        android:text="Send"
+        android:id="@+id/btnSend"
+        />
+
+</LinearLayout>

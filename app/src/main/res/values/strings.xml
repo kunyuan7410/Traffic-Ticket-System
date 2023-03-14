@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MySummon</string>
+    <string name="did_t_get_otp_resend">Did not get OTP?<b>Resend</b></string>
+    <!--    <string-array name="typeSummon">-->
+    <!--        <item>One</item>-->
+    <!--        <item>two</item>-->
+    <!--        <item>three</item>-->
+    <!--        <item>four</item>-->
+    <!--        <item>five</item>-->
+    <!--    </string-array>-->
+</resources>

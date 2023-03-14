@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".CitizenRegister"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ttslogo4"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Traffic Ticket System"
+        android:textColor="@color/black"
+        android:layout_marginTop="-20dp"
+        android:textSize="23sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a New Account"
+        android:textSize="18dp"
+        android:layout_marginTop="-10dp"
+        android:id="@+id/textview123"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview123"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="License Plate Number"
+        app:startIconDrawable="@drawable/ic_vehicle"
+        app:counterMaxLength="15"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview123"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username1"
+            android:layout_marginTop="6dp"
+            android:hint="Password"
+            app:startIconDrawable="@drawable/ic_password"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cpassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+
+            app:passwordToggleEnabled="true"
+            android:layout_below="@+id/password1"
+            android:hint="Confirm Password"
+            app:startIconDrawable="@drawable/ic_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_centerInParent="true">
+            <ProgressBar
+                android:id="@+id/Progress"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000"
+        android:text="SignUp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnBack"
+        android:text="GO BACK"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/citizen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="user"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible" />
+    <EditText
+        android:id="@+id/empty_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/empty_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/empty_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/empty_plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/empty_IC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible" />
+
+
+</LinearLayout>
